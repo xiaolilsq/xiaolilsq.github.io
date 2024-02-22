@@ -3,6 +3,7 @@
     <head>
         <title>xiaolilsq's homepage</title>
         <link rel="stylesheet" type="text/css" href="styles/style.css">
+        <script src="script/calc.js"></script>
     </head>
     <body>
         <h1>xiaolilsq's homepage</h1>
@@ -22,16 +23,5 @@
         <button onclick="clickCalc()">Click Me!</button>
         <p>You have clicked for <a id="count">0</a> times.</p>
         <button class="button" onclick="clickCalc10()">TEST</button>
-        <script>
-            var cnt = 0;
-            function clickCalc(){
-                ++cnt;
-                document.getElementById("count").innerHTML=cnt;
-            }
-            function clickCalc10(){
-                cnt+=10;
-                document.getElementById("count").innerHTML=cnt;
-            }
-        </script>
     </body>
 </html>
